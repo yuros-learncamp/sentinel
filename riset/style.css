@@ -9,7 +9,7 @@ body {
     background: #0C1016;
     color: #F8F8FF;
     min-height: 100vh;
-    padding: 2rem;
+    padding: 2rem 2rem 2rem 240px;
 }
 
 .container {
@@ -43,9 +43,21 @@ header {
 
 .sidebar {
     position: fixed;
-    left: 2rem;
-    top: 120px;
-    width: 200px;
+    left: 0;
+    top: 0;
+    width: 220px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    padding: 2rem 1rem 2rem 1.5rem;
+    background: #0C1016;
+    z-index: 100;
+    border-right: 1px solid #1a2030;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .nav-item {
@@ -120,7 +132,6 @@ header {
 }
 
 .main-content {
-    margin-left: 250px;
     margin-right: 50px;
 }
 
@@ -220,7 +231,6 @@ header {
 
 .arrow-btn:hover {
     background: rgba(116, 227, 255, 0.2);
-    transform: translateY(-2px);
 }
 
 .arrow-btn i {
@@ -276,7 +286,6 @@ header {
 }
 
 .team-card:hover {
-    transform: translateY(-5px);
 }
 
 .team-avatar {
@@ -463,6 +472,9 @@ header {
     .sidebar {
         display: none;
     }
+    body {
+        padding: 2rem;
+    }
     .main-content {
         margin-left: 0;
         margin-right: 0;
@@ -575,7 +587,6 @@ header {
 }
 
 .masonry-item:hover {
-    transform: translateY(-5px);
 }
 
 .image-placeholder {
@@ -608,7 +619,6 @@ header {
 .audio-card:hover {
     background: #0C1016;
     border-color: #74E3FF;
-    transform: translateY(-2px);
 }
 
 .audio-icon {
@@ -705,7 +715,6 @@ header {
 
 .video-card:hover {
     border-color: #74E3FF;
-    transform: translateY(-2px);
 }
 
 .video-thumbnail {

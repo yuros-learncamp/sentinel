@@ -61,7 +61,6 @@ function updateMemberInfo(index) {
     document.getElementById('member-image').src = member.image;
     document.getElementById('label-name').textContent = member.name;
     document.getElementById('label-role').textContent = member.role;
-    // Don't change the title and bio - keep "latar belakang" static
 
     // Update active card
     document.querySelectorAll('.team-card').forEach(card => {
@@ -94,28 +93,32 @@ document.querySelectorAll('.team-card').forEach(card => {
     });
 });
 
-// Add member functionality
-document.querySelector('.add-member').addEventListener('click', () => {
-    alert('Fitur tambah anggota tim akan segera hadir!');
-});
+// Flag to prevent scroll listener from interfering after nav click
+let isNavScrolling = false;
+let navScrollTimer = null;
 
-// Sidebar navigation scroll
+// Sidebar navigation click
 document.querySelectorAll('.nav-item[data-section]').forEach(item => {
     item.addEventListener('click', () => {
+        // Skip if this is the nav-parent (handled separately below)
+        if (item.classList.contains('nav-parent')) return;
+
         const section = item.dataset.section;
         const targetElement = document.getElementById(`${section}-section`);
-        
+
         if (targetElement) {
-            // Remove active from all nav items
-            document.querySelectorAll('.nav-item').forEach(navItem => {
-                navItem.classList.remove('active');
-            });
-            
-            // Add active to clicked item
+            // Set flag so scroll listener doesn't interfere
+            isNavScrolling = true;
+            clearTimeout(navScrollTimer);
+            navScrollTimer = setTimeout(() => { isNavScrolling = false; }, 1000);
+
+            // Update active state
+            document.querySelectorAll('.nav-item').forEach(navItem => navItem.classList.remove('active'));
             item.classList.add('active');
-            
-            // Close submenu if clicking on non-parent items
-            if (!item.classList.contains('nav-parent')) {
+
+            // If clicking a non-hasil top-level item, close submenu
+            const hasilSections = ['hasil', 'hasil-bazzite', 'hasil-cachyos', 'hasil-nobara', 'hasil-testing', 'hasil-performa', 'hasil-stabilitas'];
+            if (!hasilSections.includes(section)) {
                 const submenu = document.querySelector('.nav-submenu');
                 const parent = document.querySelector('.nav-parent');
                 if (submenu && parent) {
@@ -123,17 +126,14 @@ document.querySelectorAll('.nav-item[data-section]').forEach(item => {
                     parent.classList.remove('expanded');
                 }
             }
-            
-            // Smooth scroll to section
-            targetElement.scrollIntoView({ 
-                behavior: 'smooth', 
-                block: 'start' 
-            });
+
+            // Scroll to section
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
 });
 
-// Toggle submenu for "hasil"
+// Toggle submenu for "hasil" + scroll to hasil section
 const navParent = document.querySelector('.nav-parent');
 if (navParent) {
     navParent.addEventListener('click', function(e) {
@@ -143,31 +143,41 @@ if (navParent) {
         if (submenu) {
             submenu.classList.toggle('show');
         }
-        
-        // Re-initialize feather icons for the arrow
         feather.replace();
+
+        // Scroll to hasil section
+        const hasilSection = document.getElementById('hasil-section');
+        if (hasilSection) {
+            isNavScrolling = true;
+            clearTimeout(navScrollTimer);
+            navScrollTimer = setTimeout(() => { isNavScrolling = false; }, 1000);
+
+            document.querySelectorAll('.nav-item').forEach(navItem => navItem.classList.remove('active'));
+            this.classList.add('active');
+
+            hasilSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     });
 }
 
-// Auto-scroll sidebar based on scroll position - FIXED VERSION
+// Scroll spy — only updates active highlight, NEVER touches submenu
 let ticking = false;
 
 function updateActiveSidebarItem() {
+    if (isNavScrolling) return;
+
     const sections = document.querySelectorAll('[id$="-section"]');
     let currentSection = null;
     const scrollPos = window.scrollY;
-    
-    // Find which section is currently in view
+
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 300; // Adjust threshold
+        const sectionTop = section.offsetTop - 300;
         const sectionBottom = sectionTop + section.offsetHeight;
-        
         if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
             currentSection = section.id.replace('-section', '');
         }
     });
-    
-    // Fallback: if no section found, use the last passed section
+
     if (!currentSection) {
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 300;
@@ -176,30 +186,14 @@ function updateActiveSidebarItem() {
             }
         });
     }
-    
+
     if (currentSection) {
-        // Remove active from all nav items
-        document.querySelectorAll('.nav-item[data-section]').forEach(navItem => {
-            navItem.classList.remove('active');
-        });
-        
-        // Add active to current section
+        document.querySelectorAll('.nav-item[data-section]').forEach(navItem => navItem.classList.remove('active'));
         const activeNav = document.querySelector(`.nav-item[data-section="${currentSection}"]`);
         if (activeNav) {
             activeNav.classList.add('active');
-            
-            // Auto-expand hasil submenu if needed
-            const hasilSections = ['hasil', 'hasil-bazzite', 'hasil-cachyos', 'hasil-nobara', 'hasil-testing', 'hasil-performa', 'hasil-stabilitas'];
-            const submenu = document.querySelector('.nav-submenu');
-            const parent = document.querySelector('.nav-parent');
-            
-            if (hasilSections.includes(currentSection)) {
-                if (submenu && parent) {
-                    submenu.classList.add('show');
-                    parent.classList.add('expanded');
-                }
-            }
         }
+        // NOTE: submenu is intentionally NOT touched here — only opens on click
     }
 }
 
@@ -213,7 +207,6 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Run once on page load
 window.addEventListener('load', function() {
     updateActiveSidebarItem();
     feather.replace();
