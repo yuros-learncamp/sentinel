@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Showcase</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- SIDEBAR IS NOW OUTSIDE CONTAINER - THIS IS THE FIX! -->
+    <div class="sidebar">
+        <div class="nav-item nav-icon-item">
+            <i data-feather="file-text"></i>
+            <span>hasil result</span>
+        </div>
+        <div class="nav-separator"></div>
+        
+        <div class="nav-item" data-section="team">
+            <span>latar belakang</span>
+        </div>
+        <div class="nav-item" data-section="spec">
+            <span>spek</span>
+        </div>
+        <div class="nav-item" data-section="metode">
+            <span>metode</span>
+        </div>
+        <div class="nav-item nav-parent" data-section="hasil">
+            <span>hasil</span>
+        </div>
+        <div class="nav-submenu">
+            <div class="nav-item nav-subitem" data-section="hasil">
+                <span>4.1 Penyusunan benchmarking</span>
+            </div>
+            <div class="nav-item nav-subitem" data-section="hasil-bazzite">
+                <span>4.1.1 Bazzite</span>
+            </div>
+            <div class="nav-item nav-subitem" data-section="hasil-cachyos">
+                <span>4.1.2 Cachyos</span>
+            </div>
+            <div class="nav-item nav-subitem" data-section="hasil-nobara">
+                <span>4.1.3 Nobara</span>
+            </div>
+            <div class="nav-item nav-subitem" data-section="hasil-testing">
+                <span>4.2 Testing sistem pada archlinux</span>
+            </div>
+            <div class="nav-item nav-subitem" data-section="hasil-performa">
+                <span>4.2.1 Riset performa</span>
+            </div>
+            <div class="nav-item nav-subitem" data-section="hasil-stabilitas">
+                <span>4.2.2 Riset stabilitas</span>
+            </div>
+        </div>
+        <div class="nav-item" data-section="kesimpulan">
+            <span>kesimpulan</span>
+        </div>
+        <div class="nav-item" data-section="referensi">
+            <span>refrensi</span>
+        </div>
+        
+        <div class="nav-separator"></div>
+        
+        <div class="nav-item nav-icon-item">
+            <i data-feather="database"></i>
+            <span>data</span>
+        </div>
+        <div class="nav-separator"></div>
+        
+        <div class="nav-item" onclick="window.location.href='datum.html'">
+            <span>datum</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/yuros.png" alt="Logo">
+            </div>
+        </header>
+
+        <div class="main-content">
+            <div class="team-section" id="team-section">
+                <div class="team-header">
+                    <div class="team-main">
+                        <div class="member-image">
+                            <img id="member-image" src="images/amba.jpg" alt="">
+                            <div class="member-label">
+                                <div class="member-label-name" id="label-name">Amba</div>
+                                <div class="member-label-role" id="label-role">Leader Company</div>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h2 id="member-name">latar belakang</h2>
+                            <p id="member-bio">
+                                Proyek dari izanagi merupakan riset untuk pengembangan sistem operasi yang berfokus pada gaming dengan distro archlinux. Pengembangan sistem operasi untuk gaming ini berfokus pada stabilitas, performa, dan stabilitas bagi pengguna dalam memainkan game dalam platform linux. Untuk tujuan tersebut proyek izanagi melaksanakan beberapa riset tentang beberapa distro linux yang didesain untuk keperluan gaming, seperti cachyos, nobara, bazzite. Ketiga sistem operasi digunakan sebagai standar dalam riset perbandingan untuk dasar berbasis archlinux dalam aktivitas gaming.
+                                <br><br>
+                                Selain melakukan percobaan dari beberapa sistem operasi gaming berbasis linux, pengembangan sistem operasi yang berfokus pada gaming dengan distro archlinux juga mempertimbangkan efisiensi penggunaan memori, pemrosesan CPU, hingga penggunaan daya. Setiap komponen sistem operasi dirancang agar berjalan secara ringan namun tetap responsif, sehingga mampu mendukung aktivitas pengguna tanpa beban berlebih pada perangkat. Pendekatan ini memungkinkan sistem operasi untuk gaming berbasis distro archlinux memberikan pengalaman penggunaan yang optimal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="nav-arrows">
+                        <div class="arrow-btn" id="prev-btn">
+                            <i data-feather="arrow-left"></i>
+                        </div>
+                        <div class="arrow-btn" id="next-btn">
+                            <i data-feather="arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="team-carousel" id="carousel">
+                    <div class="team-card active" data-index="0">
+                        <div class="team-avatar">
+                            <img src="images/amba.jpg" alt="Amba">
+                        </div>
+                        <div class="team-name">Amba</div>
+                    </div>
+                    <div class="team-card" data-index="1">
+                        <div class="team-avatar">
+                            <img src="images/sarah.jpg" alt="Sarah">
+                        </div>
+                        <div class="team-name">Sarah</div>
+                    </div>
+                    <div class="team-card" data-index="2">
+                        <div class="team-avatar">
+                            <img src="images/david.jpg" alt="David">
+                        </div>
+                        <div class="team-name">David</div>
+                    </div>
+                    <div class="team-card" data-index="3">
+                        <div class="team-avatar">
+                            <img src="images/maya.jpg" alt="Maya">
+                        </div>
+                        <div class="team-name">Maya</div>
+                    </div>
+                    <div class="team-card" data-index="4">
+                        <div class="team-avatar">
+                            <img src="images/alex.jpg" alt="Alex">
+                        </div>
+                        <div class="team-name">Alex</div>
+                    </div>
+                    <div class="team-card" data-index="5">
+                        <div class="team-avatar">
+                            <img src="images/emma.jpg" alt="Emma">
+                        </div>
+                        <div class="team-name">Emma</div>
+                    </div>
+                    <div class="team-card" data-index="6">
+                        <div class="team-avatar">
+                            <img src="images/james.jpg" alt="James">
+                        </div>
+                        <div class="team-name">James</div>
+                    </div>
+                    <div class="team-card" data-index="7">
+                        <div class="team-avatar">
+                            <img src="images/lisa.jpg" alt="Lisa">
+                        </div>
+                        <div class="team-name">Lisa</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spec Section -->
+            <div class="spec-section" id="spec-section">
+                <h1 class="spec-title">Spesifikasi Perangkat Uji Coba</h1>
+                
+                <div class="spec-device">
+                    <h2 class="device-title">2.1 MSI Thin Gf63 11uc-1204id</h2>
+                    
+                    <table class="spec-table">
+                        <tr>
+                            <td class="spec-label">Jenis</td>
+                            <td class="spec-label">Keterangan</td>
+                        </tr>
+                        <tr>
+                            <td>CPU</td>
+                            <td>11th Gen Intel® Core™ i5-11400H processor 6 cores, Max Turbo Frequency 4.5 GHz</td>
+                        </tr>
+                        <tr>
+                            <td>Display</td>
+                            <td>15.6" FHD(1920x1080), 144Hz Refresh Rate, IPS-Level</td>
+                        </tr>
+                        <tr>
+                            <td>Chipset</td>
+                            <td>Intel® HM570</td>
+                        </tr>
+                        <tr>
+                            <td>GPU</td>
+                            <td>NVIDIA® GeForce RTX™ 3050 Laptop GPU Up to 1172.5MHz Boost Clock 40W Maximum Graphics Power with Dynamic Boost. *May vary by scenario</td>
+                        </tr>
+                        <tr>
+                            <td>Memory</td>
+                            <td>8GB*1 DDR4-3200</td>
+                        </tr>
+                        <tr>
+                            <td>Storage Slot</td>
+                            <td>1x M.2 SSD slot (NVMe PCIe Gen3) 1x 2.5" SATA HDD</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="spec-device">
+                    <h2 class="device-title">2.2 Asus Tuf Fx506hc</h2>
+                    
+                    <table class="spec-table">
+                        <tr>
+                            <td class="spec-label">Jenis</td>
+                            <td class="spec-label">Keterangan</td>
+                        </tr>
+                        <tr>
+                            <td>CPU</td>
+                            <td>Intel® Core™ i5-11400H Processor 2.7 GHz (12M Cache, up to 4.5 GHz, 6 Cores)</td>
+                        </tr>
+                        <tr>
+                            <td>Display</td>
+                            <td>15.6-inch, FHD (1920 x 1080) 16:9, Value IPS-level, Anti-glare display, sRGB:62.5%, Adobe:47.34%, Refresh Rate:144hz, Adaptive-Sync, Optimus</td>
+                        </tr>
+                        <tr>
+                            <td>Chipset</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>GPU</td>
+                            <td>NVIDIA® GeForce RTX™ 3050 Laptop GPU, Up to 1600Mhz at 60W (75W with Dynamic Boost), 4GB GDDR6</td>
+                        </tr>
+                        <tr>
+                            <td>Memory</td>
+                            <td>16GB DDR4-3200 SO-DIMM x 2, Max Capacity:32GB</td>
+                        </tr>
+                        <tr>
+                            <td>Storage Slot</td>
+                            <td>2x M.2 SSD slot (NVMe PCIe Gen3)</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="spec-device">
+                    <h2 class="device-title">2.3 Game</h2>
+                    
+                    <table class="spec-table">
+                        <tr>
+                            <td class="spec-label">Metadata</td>
+                            <td class="spec-label">Keterangan</td>
+                        </tr>
+                        <tr>
+                            <td>Nama</td>
+                            <td>Rise of the Tomb Raider</td>
+                        </tr>
+                        <tr>
+                            <td>Versi</td>
+                            <td>First Rilis</td>
+                        </tr>
+                        <tr>
+                            <td>Pengembang</td>
+                            <td>Crystal Dinamic, Feral Interactive</td>
+                        </tr>
+                        <tr>
+                            <td>Tahun Rilis</td>
+                            <td>2016</td>
+                        </tr>
+                        <tr>
+                            <td>Penerbit</td>
+                            <td>Crystal Dinamic, Feral Interactive</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Metode Section -->
+            <div class="metode-section" id="metode-section">
+                <h1 class="spec-title">Metode</h1>
+                
+                <p class="metode-intro">
+                    Dalam melaksanakan riset, tim proyek izanagi memiliki dua fase pada metode riset yaitu uji coba pada sistem operasi gaming berbasis linux dan testing pada sistem operasi dengan berbasis archlinux.
+                </p>
+
+                <div class="metode-subsection">
+                    <h2 class="device-title">3.1 Penyusunan Benchmarking</h2>
+                    <p class="metode-text">
+                        Dalam riset tahap satu, metode yang digunakan adalah melakukan instalasi beberapa sistem operasi gaming, yaitu cachyos, Bazzite, dan Nobara. Untuk pengujian performa yang menjadi objek riset adalah cachyos, kemudian dianalisis dan dibandingkan sebagai benchmark dengan sistem operasi lain yang berfokus terhadap gaming. Tahap ini dilakukan dan menjalankan permainan pada berbagai konfigurasi grafis, mulai dari resolusi terendah (lowest) hingga sangat tinggi (very high) sebagai instrument riset, serta pengalaman pengguna selama proses bermain game berlangsung dilkur dan hobara.
+                    </p>
+                </div>
+
+                <div class="metode-subsection">
+                    <h2 class="device-title">3.2 Testing System</h2>
+                    <p class="metode-text">
+                        Dalam riset ini, uji coba dilakukan pada kernel, yaitu Nqi, zannod, liquorix, dan zen. Untuk desktop, uji coba dilakukan pada desktop environtmnt gnome, kde plasma, hyprland, cinnamon, mate. Untuk game, uji coba menggunakan satu game yaitu Rise of the Tomb Raider menggunakan metode riset dokumen. Setiap kernal dan desktop dipasang ada sistem operasi testing yang kemudian ditambahkan aplikasi steam sebagai runner game, Tomb Raider yang dapat diakses dari yang bertugas untuk menguri coba berjumalah 6 orang untuk setiap partisipan diberikan waktu untuk menguri desktop, kernal dan game selama 2.5 jam bagi setiap parttisipan dengan waktu satu partisipan 25 menit. Tujuan dari permaina steren 1 berdasarkan tingkat performa frame rate pada rentang low hingga high FPS, serta mengidentifikasi terjadinya lag atau penurunan performa selama sesi permainan berlangsung untuk menguri stabilitas dari sistem testing dengan varian kernal dan desktop yang berbeda.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hasil Section -->
+            <div class="hasil-section" id="hasil-section">
+                <h1 class="spec-title">Hasil</h1>
+                
+                <div class="metode-subsection" id="hasil-penyusunan">
+                    <h2 class="device-title">4.1 Penyusunan benchmarking</h2>
+                    <p class="metode-text">
+                        Dalam riset tahap satu, metode yang digunakan adalah melakukan instalasi beberapa sistem operasi gaming, yaitu CachyOS, Bazzite, dan Nobara. Untuk pengujian performa yang menjadi objek riset adalah cachyos, kemudian dianalisis dan digunakan sebagai parameter untuk mengukur performa sistem berdasarkan nilai frame per second (FPS) dan menjalankan permainan pada berbagai konfigurasi grafis, mulai dari resolusi terendah (lowest) hingga sangat tinggi (very high) sebagai instrument riset, serta pengalaman pengguna selama proses bermain game berlangsung dilkur dari nobara.
+                    </p>
+                </div>
+
+                <div class="metode-subsection" id="hasil-bazzite-section">
+                    <h2 class="device-title">4.1.1 Bazzite</h2>
+                    
+                    <h3 class="resolution-title">Very High Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>12.1% avg+tips</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:18, Syria:20.57, Geothermal Valley:21.23</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:23.28, Syria:26.40, Geothermal Valley:26.51</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>20.11</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/bazzite-very-high.png" alt="Bazzite Very High Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.1.1 : bazzite with very high configuration<br>
+                        Pada benchmarking sistem operasi Bazzite dengan konfigurasi Very High, sistem yang menggunakan GeForce RTX 3050 Laptop GPU (Vulkan, driver 580.48.0) bekerja pada 100% GPU, sementara CPU hanya terbebani sekitar 15% dan RAM mencapai 12.5 GB dari 15.3 GB. Hasil pengujian menunjukkan perbedaan performa yang cukup ekstrem, dengan FPS terendah mencapai 18 di Mountain Peak, 20.57 di Syria, dan 21.23 di Geothermal Valley (25.92 FPS), sedangkan FPS tertinggi masing-masing mencapai 235.23, 92.85, dan 78.35 pada area yang sama. Secara keseluruhan, sistem menghasilkan rata-rata 82.11 FPS, menggambarkan performa yang layak namun masih mengalami penurunan signifikan pada area dengan beban grafis berat.
+                    </p>
+
+                    <h3 class="resolution-title">High Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>12.04% avg+tips</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:19, Syria:19.15, Geothermal Valley:18.47</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:23.64, Syria:26, Geothermal Valley:26.51</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>77.28</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/bazzite-high.png" alt="Bazzite High Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.1.2 : bazzite with high configuration<br>
+                        Pada konfigurasi High, sistem dengan GeForce RTX 3050 Laptop GPU (Vulkan, driver 580.48.0) kembali bekerja pada 100% penggunaan GPU, sementara beban CPU meningkat menjadi 30% dan RAM terpakat 12.6 GB dari 15.3 GB. Pengujian menunjukkan performa yang lebih baik dengan FPS terendah tercatat 22 di Mountain Peak, 29.09 di Syria, dan 28.47 di Geothermal Valley, sementara FPS tertinggi Mountain Peak, 34.09 di Syria, dan 30.47 di Geothermal Valley, sedangkan FPS tertinggi masing-masing mencapai 112.30, 97.80, dan 91.66. Secara keseluruhan, sistem menghasilkan rata-rata 72.66 FPS, menandakan peningkatan kinerja yang cukup signifikan dibandingkan konfigurasi sebelumnya.
+                    </p>
+
+                    <h3 class="resolution-title">Medium Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>13%</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:21, Syria:18, Geothermal Valley:18.51</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:18.12, Syria:103.92, Geothermal Valley:91.00</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>91.86</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/bazzite-medium.png" alt="Bazzite Medium Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.1.3 : bazzite with medium configuration<br>
+                        Pada konfigurasi Medium, GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 590.48.0) masih bekerja pada 100%, dengan beban CPU naik menjadi 15% dan penggunaan RAM 12.5 GB dari 15.3 GB. Performa game menunjukkan peningkatan signifikan dibandingkan preset sebelumnya, dengan FPS terendah sebesar 72.15 di Mountain Peak, 42.82 di Syria, dan 18.51 di Geothermal Valley, serta FPS tertinggi mencapai 182.12, 103.92, dan 101.00 pada lokasi yang sama. Secara keseluruhan, benchmark menghasilkan rata-rata 91.86 FPS, menunjukkan performa yang jauh lebih stabil dan responsif pada pengaturan grafis tingkat menengah.
+                    </p>
+
+                    <h3 class="resolution-title">Low Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>13%</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:21.25, Syria:17.25, Geothermal Valley:29.44</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:228.60, Syria:123.25, Geothermal Valley:117.26</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>109.80</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/bazzite-low.png" alt="Bazzite Low Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.1.4 : bazzite with low configuration<br>
+                        Benchmarking dikonfigurasi Low, GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 590.48.0) tetap bekerja pada 100%, dengan penggunaan CPU di 15% dan RAM bertahan di 12.6 GB dari 15.3 GB. Hasil benchmark menunjukkan peningkatan performa yang cukup jelas, dengan FPS terendah mencapai 51.33 di Mountain Peak, 47.25 di Syria, dan 38.64 di Geothermal Valley, serta FPS tertinggi menembus 228.60, 123.25, dan 117.26 pada lokasi yang sama. Secara keseluruhan, konfigurasi ini memberikan rata-rata 109.80 FPS, menandakan pengalaman bermain yang jauh lebih mulus bahkan dengan grafis yang lebih ringan.
+                    </p>
+
+                    <h3 class="resolution-title">Lowest Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>29%</td>
+                            </tr>
+                            <tr>
+                                <td>ram</td>
+                                <td>12.7 gb/15.3gb</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:107.20, Syria:83, Geothermal Valley:29.13</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:261.79, Syria:148.18, Geothermal Valley:102.78</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>129.22</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/bazzite-lowest.png" alt="Bazzite Lowest Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.1.5 : bazzite with lowest configuration<br>
+                        Konfigurasi Lowest dengan GeForce RTX 3050 Laptop GPU (Vulkan, driver 590.48.0) tetap mempertahankan GPU pada 100%, namun CPU meningkat signifikan ke 29% dan RAM sedikit naik ke 12.7 GB dari 15.3 GB. Performa game mencapai tingkat paling tinggi di seluruh pengujian, dengan FPS terendah sebesar 107.20 di Mountain Peak, 83.93 di Syria, dan 29.13 di Geothermal Valley, serta FPS tertinggi mencapai 261.70, 148.08, dan 135.79 masing-masing. Benchmark menghasilkan rata-rata 129.22 FPS, menunjukkan preset ini menghasilkan performa paling optimal untuk pengalaman bermain yang sangat mulus.
+                    </p>
+                </div>
+
+                <div class="metode-subsection" id="hasil-cachyos-section">
+                    <h2 class="device-title">4.1.2 CachyOS</h2>
+                    
+                    <h3 class="resolution-title">Very High Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>13%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>8.2gb/15.3gb</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:20.82, Syria:18.31, Geothermal Valley:24.81</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:110.41, Syria:55.45, Geothermal Valley:47.54</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>45.68</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/cachyos-very-high.png" alt="CachyOS Very High Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.2.1 : cachyos with very high configuration<br>
+                        Konfigurasi Very High dengan CPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 580.48.0) bekerja pada 100%, sementara CPU hanya terbebani sekitar 13% dan penggunaan RAM tidak lebih tinggi yaitu 8.2 GB dari 15.3 GB. Performa yang dihasilkan menunjukkan FPS terendah berada di kisaran 20.82 di Mountain Peak, 30.58 di Syria, dan 28.81 di Geothermal Valley, sedangkan FPS tertinggi mencapai 110.41, 55.45, dan 47.54 pada lokasi yang sama. Secara keseluruhan, benchmark menghasilkan rata-rata 45.68 FPS, menunjukkan bahwa preset Very High memberikan visual maksimal tetapi dengan penurunan performa yang cukup signifikan pada sistem ini.
+                    </p>
+
+                    <h3 class="resolution-title">High Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>13%</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:48.25, Syria:23.53, Geothermal Valley:69.79</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:123.35, Syria:69.79, Geothermal Valley:84.67</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>58.53</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/cachyos-high.png" alt="CachyOS High Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.2.2 : cachyos with high configuration<br>
+                        Uji coba konfigurasi High menggunakan GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 580.48.0) kembali bekerja pada 100%, sementara penggunaan CPU tetap ringan di 13% dan RAM turun menjadi 7.3 GB dari 15.3 GB, menunjukkan efisiensi memori yang lebih baik dibandingkan preset Visual Maximum. Performa FPS menunjukkan peningkatan yang signifikan sebesar 44.30 di Mountain Peak, 23.53 di Syria, dan 69.79 di Geothermal Valley, serta FPS tertinggi mencapai 123.35, 69.79, dan 84.67 pada area yang sama. Secara keseluruhan, preset ini menghasilkan rata-rata 58.53 FPS, memberikan keseimbangan yang lebih baik antara kualitas visual dan performa dibandingkan pengaturan Very High.
+                    </p>
+
+                    <h3 class="resolution-title">Medium Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>ram</td>
+                                <td>7.4gb/15.3gb</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:54.44, Syria:18, Geothermal Valley:52.89</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:162.73, Syria:84.81, Geothermal Valley:92.66</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>70.72</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/cachyos-medium.png" alt="CachyOS Medium Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.2.3 : cachyos with medium configuration<br>
+                        Benchmarking konfigurasi Medium dengan GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 590.48.0) tetap berada pada 100% penggunaan, sementara CPU stabil di 13% dan RAM sedikit turun menjadi 7.4 GB dari 15.3 GB, menunjukkan konsumsi memori yang efisien. Performa meningkat cukup signifikan dibandingkan preset lebih tinggi, dengan FPS terendah sebesar 54.44 di Mountain Peak, 18.14 di Syria, dan 52.89 di Geothermal Valley, sementara FPS tertinggi mencapai 162.73, 84.81, dan 92.66 pada lokasi yang sama. Secara keseluruhan, preset Medium mencapai rata-rata 70.72 FPS, menawarkan keseimbangan performa yang lebih baik sambil tetap menjaga kualitas visual yang memadai.
+                    </p>
+
+                    <h3 class="resolution-title">Low Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>15%</td>
+                            </tr>
+                            <tr>
+                                <td>ram</td>
+                                <td>7.1gb/15.3gb</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:51.01, Syria:42, Geothermal Valley:64.71</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:202.29, Syria:98.12, Geothermal Valley:98.16</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>90.35</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/cachyos-low.png" alt="CachyOS Low Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.2.4 : cachyos with low configuration<br>
+                        Pada konfigurasi Low menggunaan GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 590.48.0) tetap bekerja pada 100%, sementara CPU berada di 15% dan RAM digunakan sebesar 7.1 GB dari 15.3 GB, menunjukkan efisiensi memori yang baik. Performa FPS meningkat secara drastis, dengan nilai terendah mencapai 51.01 di Mountain Peak, 42.84 di Syria, dan 64.71 di Geothermal Valley, sementara FPS tertinggi mencapai 202.29, 98.12, dan 98.16 pada area yang sama. Secara keseluruhan, preset ini menghasilkan rata-rata 90.35 FPS, memberikan pengalaman bermain yang sangat mulus meskipun pada kualitas grafis yang lebih rendah.
+                    </p>
+
+                    <h3 class="resolution-title">Lowest Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>24%</td>
+                            </tr>
+                            <tr>
+                                <td>ram</td>
+                                <td>6.1gb/15.3gb</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:36.23, Syria:39.75, Geothermal Valley:88.17</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:304.75, Syria:78.77, Geothermal Valley:149.78</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>113.24</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/cachyos-lowest.png" alt="CachyOS Lowest Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.2.5 : cachyos with lowest configuration<br>
+                        Pada konfigurasi Lowest dengan GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 590.48.0) masih tetap pada 100%, sementara beban CPU naik menjadi 24% dan penggunaan RAM menurun ke 7.1 GB dari 15.3 GB, menunjukkan efisiensi sistem yang semakin tinggi. Hasil FPS menunjukkan performa yang sangat bervariasi, dengan nilai terendah 35.23 di Mountain Peak, 39.75 di Syria, dan 88.17 di Geothermal Valley, namun FPS tertinggi mencapai drastis hingga 304.75, 178.77, dan 149.78 pada lokasi yang sama, menggambarkan preset ini menghasilkan rata-rata 113.24 FPS, memungkinkan performa tertinggi dari seluruh konfigurasi meskipun dengan visual yang paling rendah.
+                    </p>
+                </div>
+
+                <div class="metode-subsection" id="hasil-nobara-section">
+                    <h2 class="device-title">4.1.3 Nobara</h2>
+                    
+                    <h3 class="resolution-title">Very High Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>25%</td>
+                            </tr>
+                            <tr>
+                                <td>ram</td>
+                                <td>9gb</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:25.74, Syria:7.79, Geothermal Valley:24.20</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:246.19, Syria:113.21, Geothermal Valley:85.90</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>72.91</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/nobara-very-high.png" alt="Nobara Very High Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.3.1 : nobara with very high configuration<br>
+                        Konfigurasi Very High dengan GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 580.48.0) bekerja pada 100%, sementara CPU terbebani 25% dan RAM digunakan sebitar 9 GB. Sistem menunjukkan performa yang cukup bervariasi pada preset ini, dengan FPS terendah tersatat di Syria (7.79 FPS), disusul Mountain Peak (25.74 FPS) dan Geothermal Valley (24.20 FPS), sementara FPS tertinggi mampu mencapai 246.19, 113.21, dan 85.90 pada area yang sama. Secara keseluruhan, preset ini menghasilkan rata-rata 72.91 FPS, meskipun Nobara mampu memberikan performa tinggi, namun masih mengalami penurunan tajam pada skenario dengan beban grafis berat.
+                    </p>
+
+                    <h3 class="resolution-title">High Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>16%</td>
+                            </tr>
+                            <tr>
+                                <td>ram</td>
+                                <td>8.2b/15.4 gb</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:38.40, Syria:20, Geothermal Valley:17.08</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:176.07, Syria:105.15, Geothermal Valley:97.10</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>80.28</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/nobara-high.png" alt="Nobara High Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.3.2 : nobara with high configuration<br>
+                        Uji coba konfigurasi High dengan GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 580.48.0) tetap bekerja pada 100%, dengan penggunaan CPU menurun menjadi 16% dan RAM terpakat sekitar 8.2 GB dari 15.4 GB. Performa FPS meningkat dibandingkan preset sebelumnya, dengan nilai terendah berada di Geothermal Valley (17.08 FPS), diikuti Syria (20.55 FPS) dan Mountain Peak (38.65 FPS). FPS tertinggi mencapai 176.07, 105.15, dan 97.10 pada lokasi masing-masing. Secara keseluruhan, preset ini menghasilkan rata-rata 80.28 FPS, menawarkan keseimbangan yang lebih baik antara kualitas visual dan performa dibandingkan konfigurasi Very High.
+                    </p>
+
+                    <h3 class="resolution-title">Medium Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>24%</td>
+                            </tr>
+                            <tr>
+                                <td>ram</td>
+                                <td>7.5b/15.4b</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:31.75, Syria:19, Geothermal Valley:19.01</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:185.05, Syria:83.75, Geothermal Valley:110.47</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>101.98</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/nobara-medium.png" alt="Nobara Medium Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.3.3 : nobara with medium configuration<br>
+                        Benchmarking konfigurasi Medium dengan GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 590.48.0) tetap bekerja pada 100%, dengan penggunaan CPU meningkat ke 24% dan RAM berada di kisaran 7.5 GB dari 15.4 GB. Performa FPS menunjukkan peningkatan yang cukup signifikan dibandingkan preset lebih tinggi, dengan FPS terendah 19.01 di Geothermal Valley, 33.87 di Syria, dan 83.75 di Mountain Peak, sementara FPS tertinggi mencapai 185.05, 83.75, dan 110.47 pada lokasi tersebut. Secara keseluruhan, sistem menghasilkan rata-rata 101.98 FPS, memberikan performa yang lebih stabil dan responsif tanpa menunjukan kualitas visual secara drastis.
+                    </p>
+
+                    <h3 class="resolution-title">Low Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>14%</td>
+                            </tr>
+                            <tr>
+                                <td>ram</td>
+                                <td>7.3b/15.4b</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:60.32, Syria:26, Geothermal Valley:80.28</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:404.30, Syria:148.01, Geothermal Valley:79.41</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>127.67</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/nobara-low.png" alt="Nobara Low Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.3.4 : nobara with low configuration<br>
+                        Pada saat konfigurasi Low dengan GPU GeForce RTX 3050 Laptop GPU (Vulkan, driver 580.48.0) tetap bekerja pada 100%, sementara CPU hanya terbebani 14% dan penggunaan RAM berada di kisaran 7.3 GB dari 15.4 GB, menunjukkan efisiensi sistem yang cukup baik. Hasil benchmark meningkat secara signifikan preset pada pengaturan ini, dengan nilai terendah berada di 53.70 di Mountain Peak, 66.32 di Syria, dan 80.28 di Geothermal Valley, sementara FPS tertinggi mencapai hingga 404.30, 148.01, dan 79.41 pada lokasi yang sama. Secara keseluruhan, preset ini menghasilkan rata-rata 127.67 FPS, memberikan pengalaman bermain yang sangat mulus dengan beban grafis yang lebih ringan.
+                    </p>
+
+                    <h3 class="resolution-title">Lowest Resolution</h3>
+                    
+                    <div class="hasil-content">
+                        <table class="spec-table">
+                            <tr>
+                                <td class="spec-label">scene</td>
+                                <td class="spec-label">description</td>
+                            </tr>
+                            <tr>
+                                <td>driver</td>
+                                <td>GeForce RTX 3050 Laptop GPU with Vulkan (NVIDIA - 565.65)</td>
+                            </tr>
+                            <tr>
+                                <td>gpu</td>
+                                <td>100%</td>
+                            </tr>
+                            <tr>
+                                <td>cpu</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>ram</td>
+                                <td>7.4 gb</td>
+                            </tr>
+                            <tr>
+                                <td>low fps</td>
+                                <td>Mountain Peak:129.47, Syria:81.88, Geothermal Valley:97.07</td>
+                            </tr>
+                            <tr>
+                                <td>high fps</td>
+                                <td>Mountain Peak:324.53, Syria:147.22, Geothermal Valley:147.22</td>
+                            </tr>
+                            <tr>
+                                <td>overall fps</td>
+                                <td>152.84</td>
+                            </tr>
+                        </table>
+                        
+                        <div class="hasil-image">
+                            <img src="images/nobara-lowest.png" alt="Nobara Lowest Resolution">
+                        </div>
+                    </div>
+
+                    <p class="metode-text">
+                        Gambar 4.1.3.5 : nobara with lowest configuration<br>
+                        Pada pengujian konfigurasi Lowest dengan GPU RTX 3050 Laptop bekerja di 100% dan CPU meningkat 30%, dengan RAM terpakat 30% dan RAM berada di kisaran aman 7.4 GB. Hasil FPS menunjukkan variasi terendah, kompleksitas area, Mountain Peak sangat ringan (129.47–281.88 FPS), Geothermal Valley cukup stabil (97.07–147.22 FPS), sedangkan Syria tetap jadi area paling berat dengan penurunan hingga 21.13 FPS, di area berat hingga 162.63 FPS, menawarkan bahwa pada resolusi paling rendah GPU bisa mencapai performa maksimal meskipun beberapa scene tetap menantang karena boban grafisnnya.
+                    </p>
+                </div>
+
+                <div class="metode-subsection" id="hasil-testing-section">
+                    <h2 class="device-title">4.2 Testing sistem pada archlinux</h2>
+                    
+                    <p class="metode-text">
+                        Berikut merupakan beberapa kernel, desktop, dan game yang akan diuji pada archlinux.
+                    </p>
+
+                    <table class="spec-table" style="margin: 2rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">Cara instalasi</td>
+                            <td class="spec-label">link</td>
+                        </tr>
+                        <tr>
+                            <td>Tkq</td>
+                            <td>compaile menggunakan makepkg</td>
+                            <td><a href="https://github.com/Frogging-Family/linux-tkg" target="_blank">https://github.com/Frogging-Family/linux-tkg</a></td>
+                        </tr>
+                        <tr>
+                            <td>xannmod</td>
+                            <td>compaile menggunakan makepkg</td>
+                            <td><a href="https://aur.archlinux.org/linux-xannmod.git" target="_blank">https://aur.archlinux.org/linux-xannmod.git</a></td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>install dari dokumentasi liquorix</td>
+                            <td><a href="https://liquorix.net/" target="_blank">https://liquorix.net/</a></td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>menggunakan package manager pacman</td>
+                            <td><a href="https://archlinux.org/packages/?name=linux-zen" target="_blank">https://archlinux.org/packages/?name=linux-zen</a></td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Pengujian sistem pada Arch Linux dilakukan dengan menggunakan beberapa varian kernel untuk melihat perbedaan performa dan stabilitas yang ditawarkan. Kernel Tkq dan Xanmod dipasang melalui proses kompilasi menggunakan makepkg, memungkinkan penyesuaian lebih dalam terhadap konfigurasi untuk mengoptimalkan performa khusus gaming. Kernel Tkq dan Xanmod dipasang melalui proses kompilasi menggunakan makepkg. Sementara itu, kernel Zen dipasang melalui dua metode: instalasi langsung mengikuti dokumentasi resmi Liquorix, sementara kernel Zen juga dapat diinstal secara lebih sederhana melalui package manager pacman dari repositori resmi Arch. Pendekatan ini memungkinkan pengujian pada variasi kernel dengan cara instalasi yang berbeda, sehingga dapat memberikan insight untuk memahami dampak kernel terhadap penggunaan memori, performa grafix, maupun game. Kernel Tkq dan Xannmod dipasang melalui proses kompilasi menggunakan makepkg, memungkinkan penyesuaian konfigurasi yang lebih spesifik dari repositori pihak ketiga masing-masing dan repositori github resmi dari masing-masing kernel, setelah kompilasi selesai kernel dipasang dengan menggunakan instalasi langsung melalui pacman dari file .pkg yang dibuat, sedangkan Liquorix melalui instalasi langsung paket deb yang disediakan Arch, namun memerlukan konversi paket deb yang dibuat kedalam melihat bagaimana fitur-fitur setup lingkungan desktop pada skenario penggunaan yang berbeda.
+                    </p>
+
+                    <table class="spec-table" style="margin: 2rem 0;">
+                        <tr>
+                            <td class="spec-label">Desktop</td>
+                            <td class="spec-label">Cara instalasi</td>
+                            <td class="spec-label">link</td>
+                        </tr>
+                        <tr>
+                            <td>gnome</td>
+                            <td>menggunakan package manager pacman</td>
+                            <td><a href="https://wiki.archlinux.org/title/GNOME" target="_blank">https://wiki.archlinux.org/title/GNOME</a></td>
+                        </tr>
+                        <tr>
+                            <td>plasma</td>
+                            <td>menggunakan package manager pacman</td>
+                            <td><a href="https://wiki.archlinux.org/title/KDE#plasma" target="_blank">https://wiki.archlinux.org/title/KDE#plasma</a></td>
+                        </tr>
+                        <tr>
+                            <td>hyprland</td>
+                            <td>menggunakan package manager pacman</td>
+                            <td><a href="https://wiki.archlinux.org/title/Hyprland" target="_blank">https://wiki.archlinux.org/title/Hyprland</a></td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Pengujian juga mencakup berbagai desktop environment yang dipasang, langsung melalui pacman untuk memastikan konsistensi instalasi dan konfigurasi resmi. GNOME digunakan menawarkan desktop yang modern dan ramping, Plasma menawarkan fleksibilitas tinggi dan workflow tersktuktur, Plasma menawarkan lingkungan KDE yang kaya fitur dan sangat dapat dikustomisasi, sementara Hyprland mewakili window manager Wayland yang ringan dengan fokus pada estetika, minimalis, dan workflow terstruktur, dimana setiap setup dan workflow terstruktur. Plasma menawarkan lingkungan KDE yang kaya fitur dan sangat dapat dikustomisasi. Sementara Hyprland mewakili window manager Wayland dari ketiga desktop itu akan diuji dalam berbagai serta pendekatan konfigurasi yang dinamis. Variasi ini membantu melihat bagaimana fitur-fitur setup lingkungan desktop pada skenario penggunaan yang berbeda, variasi kernel maupun Arch stabilitas pada sistem operasi archlinux.
+                    </p>
+
+                    <table class="spec-table" style="margin: 2rem 0;">
+                        <tr>
+                            <td class="spec-label">No</td>
+                            <td class="spec-label">Aplikasi</td>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Steam</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Rise of the Tomb Raider</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Pengujian aplikasi difokuskan pada Steam sebagai platform distribusi game utama di archlinux. Di dalam Steam, Rise of the Tomb Raider dipilih sebagai game benchmark karena memiliki opsi grafik yang luas, beban GPU/CPU yang berat, serta tiga skenario pengujian bawaan—Mountain Peak, Syria, dan Geothermal Valley—yang memungkinkan evaluasi performa secara konsisten pada berbagai konfigurasi kernel dan desktop environment di sistem operasi archlinux.
+                    </p>
+                </div>
+
+                <div class="metode-subsection" id="hasil-performa-section">
+                    <h2 class="device-title">4.2.1 Riset Performa</h2>
+                    
+                    <h3 class="resolution-title">4.2.1.1 Uji Coba Tahap 1</h3>
+                    
+                    <h4 class="resolution-title" style="font-size: 1rem; margin-top: 1.5rem;">plasma</h4>
+                    
+                    <table class="spec-table" style="margin: 1.5rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">low fps</td>
+                            <td class="spec-label">high fps</td>
+                            <td class="spec-label">ram</td>
+                            <td class="spec-label">cpu</td>
+                            <td class="spec-label">gpu</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>18</td>
+                            <td>103</td>
+                            <td>6.5gb</td>
+                            <td>16%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>16</td>
+                            <td>51</td>
+                            <td>6.1gb</td>
+                            <td>14%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>21</td>
+                            <td>75</td>
+                            <td>6.2gb</td>
+                            <td>20%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>xanmod</td>
+                            <td>18</td>
+                            <td>76</td>
+                            <td>7.6gb</td>
+                            <td>27%</td>
+                            <td>100%</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Hasil benchmarking pada Plasma menunjukkan bahwa seluruh kernel berada dalam kondisi GPU-bound karena penggunaan GPU selalu 100% sementara CPU relatif rendah. Kernel tkg mencatat FPS tertinggi hingga 103) sehingga unggul dalam performa puncak. Liquorix menawarkan performa paling stabil dengan low FPS terendah (16) dan high FPS paling menawarkan performa cukup tinggi tetapi dengan konsumsi CPU dan RAM paling besar, sehingga secara umum Zen paling seimbang. TKG paling efisien.
+                    </p>
+
+                    <h4 class="resolution-title" style="font-size: 1rem; margin-top: 1.5rem;">gnome</h4>
+                    
+                    <table class="spec-table" style="margin: 1.5rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">low fps</td>
+                            <td class="spec-label">high fps</td>
+                            <td class="spec-label">ram</td>
+                            <td class="spec-label">cpu</td>
+                            <td class="spec-label">gpu</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>19</td>
+                            <td>100</td>
+                            <td>7.3gb</td>
+                            <td>22%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>24</td>
+                            <td>73</td>
+                            <td>7.3gb</td>
+                            <td>23%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>22</td>
+                            <td>87</td>
+                            <td>7.4gb</td>
+                            <td>16%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>xanmod</td>
+                            <td>20</td>
+                            <td>90</td>
+                            <td>7.6gb</td>
+                            <td>23%</td>
+                            <td>100%</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Pada hasil benchmarking ini, semua kernel kembali menunjukkan kondisi GPU-bound karena penggunaan GPU konsisten di 100%, sementara CPU berada di kisaran 16–23%. Liquorix hingga mencapai, Liquorix mencatat low FPS tertinggi (100) namun high FPS yang lebih rendah (73) dibandingkan TKG tetapi Liquorix menunjukkan performa awal paling tinggi dari semua konsisten dibandingkan kernel lain. FPS maksimum (100) dengan low FPS yang lebih rendah (16) dan high FPS puncak performa, dan Zen paling efisien.
+                    </p>
+
+                    <h4 class="resolution-title" style="font-size: 1rem; margin-top: 1.5rem;">hyprland</h4>
+                    
+                    <table class="spec-table" style="margin: 1.5rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">low fps</td>
+                            <td class="spec-label">high fps</td>
+                            <td class="spec-label">ram</td>
+                            <td class="spec-label">cpu</td>
+                            <td class="spec-label">gpu</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>26</td>
+                            <td>82</td>
+                            <td>7.5gb</td>
+                            <td>21%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>21</td>
+                            <td>52</td>
+                            <td>7.5gb</td>
+                            <td>20%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>22</td>
+                            <td>79</td>
+                            <td>7.1gb</td>
+                            <td>26%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>xanmod</td>
+                            <td>19</td>
+                            <td>82</td>
+                            <td>7.4gb</td>
+                            <td>20%</td>
+                            <td>100%</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Seluruh kernel kembali berada pada kondisi GPU-bound karena GPU selalu 100% sementara penggunaan CPU relatif rendah (26). Liquorix memiliki performa paling rendah baik di low maupun high FPS tertinggi (26) namun Liquorix yang cukup bervariasi high FPS tinggi (73) dengan penggunaan sumberdaya yang cukup rendah. Liquorix berada di tengah dengan performa menengah namun penggunaan RAM lebih tinggi, sementara Zen tertinggi cukup stabil. XanMod paling seimbang, dengan high FPS maksimum tertiggi (82) namun low FPS terendah, sehingga secara keseluruhan Zen cenderung kurang konsisten. XanMod paling kencang, dan TKG paling stabil.
+                    </p>
+
+                    <h3 class="resolution-title">4.2.1.2 Uji Coba Tahap 2</h3>
+                    
+                    <h4 class="resolution-title" style="font-size: 1rem; margin-top: 1.5rem;">plasma</h4>
+                    
+                    <table class="spec-table" style="margin: 1.5rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">low fps</td>
+                            <td class="spec-label">high fps</td>
+                            <td class="spec-label">ram</td>
+                            <td class="spec-label">cpu</td>
+                            <td class="spec-label">gpu</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>100</td>
+                            <td>180</td>
+                            <td>7.7gb</td>
+                            <td>45%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>85</td>
+                            <td>130</td>
+                            <td>8.2gb</td>
+                            <td>45%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>50</td>
+                            <td>110</td>
+                            <td>8.4gb</td>
+                            <td>50%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>xanmod</td>
+                            <td>90</td>
+                            <td>190</td>
+                            <td>7.9gb</td>
+                            <td>45%</td>
+                            <td>100%</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Hasil ini menunjukkan bahwa GPU-bound yang kuat (GPU 100% di semua kernel) dengan CPU cukup tinggi di kisaran 45–50%). TKG unggul dalam performa puncak dengan low FPS tertinggi berada di kisaran 100 dan high FPS mencapai 180, serta penggunaan RAM yang masih tetap efisien. Liquorix memiliki stabilitas cukup baik, Liquorix berada di tengah dengan performa menengah namun penggunaan RAM lebih tinggi, sementara Zen tertinggi cukup low FPS paling rendah (50) dan high FPS masih bisa kompetitif.</p>
+
+                    <h4 class="resolution-title" style="font-size: 1rem; margin-top: 1.5rem;">gnome</h4>
+                    
+                    <table class="spec-table" style="margin: 1.5rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">low fps</td>
+                            <td class="spec-label">high fps</td>
+                            <td class="spec-label">ram</td>
+                            <td class="spec-label">cpu</td>
+                            <td class="spec-label">gpu</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>90</td>
+                            <td>125</td>
+                            <td>7.6gb</td>
+                            <td>30%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>100</td>
+                            <td>145</td>
+                            <td>7.2gb</td>
+                            <td>30%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>84</td>
+                            <td>138</td>
+                            <td>7.6gb</td>
+                            <td>39%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>xanmod</td>
+                            <td>50</td>
+                            <td>120</td>
+                            <td>8.1gb</td>
+                            <td>40%</td>
+                            <td>100%</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Pada pengujian ini, penggunaan CPU lebih rendah (30–40%) namun tetap GPU-bound. Liquorix teratas paling seimbang dengan low FPS tertinggi (100) dan high FPS 148 sekaligus RAM paling efisien, membuat nya tersedia paling stabil. TKG tetap solid dengan performa mendekati keseluran secara keseluruhan paling stabil Liquorix namun sedikit high FPS masih bisa tinggi. Zen menawarkan performa menengah (50) dan tingkat penggunaan high low FPS meski high FPS masih efisien RAM. Liquorix secara high FPS tinggi sedikit efisien, sementara Zen paling konsisten hasil cenderung kurang konsisten.</p>
+
+                    <h4 class="resolution-title" style="font-size: 1rem; margin-top: 1.5rem;">hyprland</h4>
+                    
+                    <table class="spec-table" style="margin: 1.5rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">low fps</td>
+                            <td class="spec-label">high fps</td>
+                            <td class="spec-label">ram</td>
+                            <td class="spec-label">cpu</td>
+                            <td class="spec-label">gpu</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>6.2 gb</td>
+                            <td>36%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>6.0gb</td>
+                            <td>30%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>90</td>
+                            <td>115</td>
+                            <td>6.0gb</td>
+                            <td>40%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>xanmod</td>
+                            <td>90</td>
+                            <td>117</td>
+                            <td>6.0gb</td>
+                            <td>30%</td>
+                            <td>100%</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Hasil benchmarking ini memperlihatkan performa yang sangat merata antar kernel, dengan low FPS sektor di 90 hingga 115–120. Liquorix dan Zen paling hemat RAM, Zen sedikit lebih tinggi pada efisiensi resource, di mana Liquorix dan Zen paling hemat RAM tersebut secara keseluruhan, tidak ada kernel yang lebih paling besar. Berdasarkan konsistensi kernel FPS ini sektor keseimbangan puncak performa, dan Zen paling efisien.</p>
+                </div>
+
+                <div class="metode-subsection" id="hasil-stabilitas-section">
+                    <h2 class="device-title">4.2.2 Riset Stabilitas</h2>
+                    
+                    <table class="spec-table" style="margin: 2rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">indikasi</td>
+                            <td class="spec-label">scene</td>
+                            <td class="spec-label">waktu</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>Lagging</td>
+                            <td>efek banjir dan runtuban gas dalam satu adegan</td>
+                            <td>0.34.31</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>Lagging</td>
+                            <td>upgrade senjata karakter</td>
+                            <td>1.16.30</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Benchmarking pada kernel tkg menunjukkan bahwa performanya masih mengalami lagging pada dua skenario berbeda, pertama saat efek visual kompleks yang membutuhkan efek banjir dan runtuhan gas dalam satu adegan, kernel menunjukkan masalah performa sebesar 0.34.31 memperlihatkan bahwa kernel belum menangani beban grafis yang optimal, baik plural maupun momen dengan efek visual kompleks.
+                    </p>
+
+                    <table class="spec-table" style="margin: 2rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">indikasi</td>
+                            <td class="spec-label">scene</td>
+                            <td class="spec-label">waktu</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>lagging</td>
+                            <td>spam gerakan</td>
+                            <td>0.21.27</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>lagging</td>
+                            <td>efek ledakan berulang kali dalam satu adegan</td>
+                            <td>0.36.01</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>lagging</td>
+                            <td>turun dari ketinggian dalam keadaan hujan lebat</td>
+                            <td>2.12.53</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Benchmarking pada kernel lqx memperlihatkan bahwa indikasi lagging muncul konsisten di tiga titik uji: saat karakter melakukan spam gerakan, ketika terjadi ledakan berulang dalam satu adegan, serta pada momen turun dari ketinggian di tengah hujan lebat. Ketiga skenario ini menggambarkan bahwa kernel LOX belum mampu menangani adekuat spam grafis yang optimal.
+                    </p>
+
+                    <table class="spec-table" style="margin: 2rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">indikasi</td>
+                            <td class="spec-label">kode</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>Crashed with signal</td>
+                            <td>SIGSEGV(11)</td>
+                        </tr>
+                    </table>
+
+                    <div class="hasil-image" style="margin: 2rem 0;">
+                        <img src="images/crash-lqx-1.png" alt="Crash lqx 1">
+                    </div>
+
+                    <p class="metode-text">Gambar 4.2.2.1 : crash lqx 1</p>
+
+                    <div class="hasil-image" style="margin: 2rem 0;">
+                        <img src="images/crash-lqx-2.png" alt="Crash lqx 2">
+                    </div>
+
+                    <p class="metode-text">Gambar 4.2.2.1 : crash lqx 1</p>
+
+                    <p class="metode-text">
+                        Kernel lqx menunjukkan kegagalan serius berupa crash dengan sinyal SIGSEGV(11), yang terlihat jelas pada kedua tangkapan layer saat game menampilkan pesan kesalahan terkait segmentation fault dan dialog laporan crash. Pada tangkapan layar kedua, error lebih detail memperlihatkan bahwa terjadi crash saat proses pembuatan fault dan dialog crash, sementara gambar kedua menunjukkan tampilan eror yang terjadi bersamaan crash tersebut dan menambahkan pesan kesalahan eror visual pada tampilan masalah dalam menangani render grafis pada tingkat aplikasi. Hal ini mengonfirmasikan adanya ketidakcocokan atau kegagalan pemrosesan visual yang mempengaruhi kejelasan dan fungsionalitas antarmuka Steam.
+                    </p>
+
+                    <table class="spec-table" style="margin: 2rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">aplikasi</td>
+                            <td class="spec-label">erorr</td>
+                        </tr>
+                        <tr>
+                            <td>xanmod</td>
+                            <td>steam</td>
+                            <td>rusak dalam tataran grafis dengan menampilkan garis-garis pada aplikasi</td>
+                        </tr>
+                    </table>
+
+                    <div class="hasil-image" style="margin: 2rem 0;">
+                        <img src="images/crash-xanmod.png" alt="Crash xanmod">
+                    </div>
+
+                    <p class="metode-text">Gambar 4.2.2.2 : crash xanmod</p>
+
+                    <p class="metode-text">
+                        Kernel Xanmod menunjukkan masalah pada aplikasi Steam berupa kerusakan visual yang tampak jelas melalui munculnya pola garis-garis pada elemen antarmuka aplikasi. Gangguan grafis ini terlihat langsung pada tingkapan layer, di mana tampilan Steam rusak dengan adanya garis-garis grafis visual yang tampak noise atau crash visual, memanipulasi baik dalam menangani render grafis pada tingkat aplikasi. Hal ini mengindikasikan adanya ketidakcocokan atau kegagalan pemrosesan visual yang mempengaruhi kejelas dan fungsionalitas antarmuka Steam.
+                    </p>
+
+                    <h4 class="resolution-title" style="font-size: 1rem; margin-top: 2rem;">gnome</h4>
+                    
+                    <table class="spec-table" style="margin: 1.5rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">indikasi</td>
+                            <td class="spec-label">scene</td>
+                            <td class="spec-label">waktu</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>lagging</td>
+                            <td>cut scene</td>
+                            <td>01:22:21</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>lagging</td>
+                            <td>edit baju karakter</td>
+                            <td>02:13:10</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>lagging</td>
+                            <td>cut scene</td>
+                            <td>02:15:36</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>lagging</td>
+                            <td>combat scene</td>
+                            <td>02:23:07</td>
+                        </tr>
+                        <tr>
+                            <td>tkg</td>
+                            <td>lagging</td>
+                            <td>combat scene</td>
+                            <td>02:30:06</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Benchmarking pada kernel tkg menunjukkan masalah berupa lagging di berbagai momen gameplay dan cutscene. Ini terjadi hingga cut-scene lainnya, proses pengeditan baju karakter, hingga pertemporan intens.
+                    </p>
+
+                    <table class="spec-table" style="margin: 1.5rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">indikasi</td>
+                            <td class="spec-label">scene</td>
+                            <td class="spec-label">waktu</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>lagging</td>
+                            <td>edit baju karakter</td>
+                            <td>00:40:43</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>lagging</td>
+                            <td>saat gerakan double jump</td>
+                            <td>00:59:13</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>lagging</td>
+                            <td>lompat di obstacle</td>
+                            <td>01:09:34</td>
+                        </tr>
+                        <tr>
+                            <td>lqx</td>
+                            <td>lagging</td>
+                            <td>perang dengan banyak musuh</td>
+                            <td>01:20:09</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Benchmarking pada kernel lqx memperlihatkan munculnya lagging di berbagai aktivitas gameplay seperti edit baju karakter, gerakan double jump, hingga lompatan di area obstacle. Penurunan performa lebih lanjut saat memasuki adegan perang dengan banyak musuh. yang umumnya menuntut kalkulasi permrosesan grafis dan respons input yang cepat. Hasil ini menunjukkan bahwa meskipun LOX mampu menangani aksi cepat maupun adegan dengan beban visual tinggi.</p>
+
+                    <table class="spec-table" style="margin: 1.5rem 0;">
+                        <tr>
+                            <td class="spec-label">kernel</td>
+                            <td class="spec-label">indikasi</td>
+                            <td class="spec-label">scene</td>
+                            <td class="spec-label">waktu</td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>lagging</td>
+                            <td>cut scene</td>
+                            <td>00:22:09</td>
+                        </tr>
+                        <tr>
+                            <td>zen</td>
+                            <td>lagging</td>
+                            <td>render pemandangan</td>
+                            <td>00:30:06</td>
+                        </tr>
+                    </table>
+
+                    <p class="metode-text">
+                        Benchmarking pada kernel zen menunjukkan dua insiden lagging, pertama saat cutscene pada menit ke-22 dan kedua saat rendering pemandangan di menit ke-30. Meskipun frekuensi masalah lebih sedikit dibandingkan kernel lainnya, pola ini mengindikasikan kesulitan kernel zen dalam mengelola rendering visual yang kompleks maupun transisi antar scene yang memerlukan load grafis tinggi.
+                    </p>
+                </div>
+
+                <!-- Kesimpulan Section -->
+                <div class="metode-section" id="kesimpulan-section">
+                    <h3 class="spec-title">Kesimpulan</h3>
+                    
+                    <p class="metode-text">
+                        Berdasarkan hasil riset ini, dapat disimpulkan bahwa performa dan stabilitas sistem operasi gaming sangat dipengaruhi oleh kombinasi sistem operasi, kernel, dan desktop. yang digunakan. Melalui tiga tujuan dilakukan untuk mencari desktop dan kernel dengan skor tertinggi yang dapat diintegrasikan oleh Da gaming berbasis distro archlinux untuk menyediakan skos yang dimiliki oleh cachyOS dengan performa paling tinggi dibandingkan dengan sistem operasi gaming berbasis archlinux lainnya, dengan skor 304.75 fps.
+                    </p>
+
+                    <p class="metode-text">
+                        Dari hasil penentuan tersebut, riset ini juga dilakukan untuk mencari desktop dan kernel dengan skor tertinggi yang dapat diintegrasikan oleh Da gaming berbasis distro archlinux. Dari hasil riset menunjukkan untuk menyediakan sekor terbaik. Melalui tes melakukan uji pada KDE plasma, dibandingkan desktop yang dimiliki oleh CachyOS dengan: untuk mengibalidasi sistem operasi gaming CachyOS yang performa maksimal dengan tanpa mengorbankan stabilitas sistem dalam jangka panjang, sehingga dicapatkan bahwa sistem operasi gaming CachyOS dengan performa paling tinggi tentu saja memerlukan adanya os untuk meyakinkan skor yang dimiliki oleh CachyOS dari muntukan tujuan dar, adanya os gaming berbasis distro archlinux untuk mencapai optimalisasi sistem operasi gaming dengan performa maksimal dengan: tanpa mengorbankan stabilitas sistem:
+                    </p>
+
+                    <table class="spec-table" style="margin: 2rem 0;">
+                        <tr>
+                            <td class="spec-label">Desktop</td>
+                            <td class="spec-label">Kernel</td>
+                        </tr>
+                        <tr>
+                            <td>KDE plasma</td>
+                            <td>tkg</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Referensi Section -->
+                <div class="metode-section" id="referensi-section">
+                    <h3 class="spec-title">Referensi</h3>
+                    
+                    <ul class="reference-list">
+                        <li>Kernel arch</li>
+                        <li>Desktop arch</li>
+                        <li>[MSI] (<a href="https://id.msi.com/Laptop/GF63-Thin-11UX/Specification" target="_blank">https://id.msi.com/Laptop/GF63-Thin-11UX/Specification</a>)</li>
+                        <li>[Asus] (<a href="https://www.asus.com/laptops/for-gaming/tuf-gaming/2021-asus-tuf-gaming-f15/techspec/" target="_blank">https://www.asus.com/laptops/for-gaming/tuf-gaming/2021-asus-tuf-gaming-f15/techspec/</a>)</li>
+                        <li>[tomshardware] (<a href="https://www.tomshardware.com/raider.com/" target="_blank">https://www.tomshardware.com/raider.com/</a>)</li>
+                        <li>[cachyos] (<a href="https://cachyos.org/" target="_blank">https://cachyos.org/</a>)</li>
+                        <li>[nobara] (<a href="https://nobaraproject.org/" target="_blank">https://nobaraproject.org/</a>)</li>
+                        <li>[bazzite] (<a href="https://bazzite.gg/" target="_blank">https://bazzite.gg/</a>)</li>
+                    </ul>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

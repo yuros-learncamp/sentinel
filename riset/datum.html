@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datum - Data Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/yuros.png" alt="Logo">
+            </div>
+        </header>
+
+        <div class="sidebar">
+            <div class="nav-item nav-icon-item">
+                <i data-feather="file-text"></i>
+                <span>hasil result</span>
+            </div>
+            <div class="nav-separator"></div>
+            
+            <div class="nav-item" onclick="window.location.href='index.html'">
+                <span>latar belakang</span>
+            </div>
+            <div class="nav-item" onclick="window.location.href='index.html#spec-section'">
+                <span>spek</span>
+            </div>
+            <div class="nav-item" onclick="window.location.href='index.html#metode-section'">
+                <span>metode</span>
+            </div>
+            <div class="nav-item" onclick="window.location.href='index.html#hasil-section'">
+                <span>hasil</span>
+            </div>
+            <div class="nav-item" onclick="window.location.href='index.html#kesimpulan-section'">
+                <span>kesimpulan</span>
+            </div>
+            <div class="nav-item" onclick="window.location.href='index.html#referensi-section'">
+                <span>refrensi</span>
+            </div>
+            
+            <div class="nav-separator"></div>
+            
+            <div class="nav-item nav-icon-item">
+                <i data-feather="database"></i>
+                <span>data</span>
+            </div>
+            <div class="nav-separator"></div>
+            
+            <div class="nav-item nav-parent-datum active">
+                <span>datum</span>
+            </div>
+            <div class="nav-submenu-datum show">
+                <div class="nav-item nav-subitem" data-section="datum-teks">
+                    <span>teks</span>
+                </div>
+                <div class="nav-item nav-subitem" data-section="datum-image">
+                    <span>image</span>
+                </div>
+                <div class="nav-item nav-subitem" data-section="datum-audio">
+                    <span>audio</span>
+                </div>
+                <div class="nav-item nav-subitem" data-section="datum-video">
+                    <span>video</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="team-section">
+                <!-- Datum Teks Section -->
+                <div class="metode-section" id="datum-teks-section">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                        <h3 class="spec-title" style="margin: 0;">teks</h3>
+                        <button class="download-btn" onclick="downloadDatumZip('teks')">
+                            <i data-feather="download"></i>
+                            <span>Download ZIP</span>
+                        </button>
+                    </div>
+                    
+                    <p class="metode-text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
+                    </p>
+                </div>
+
+                <!-- Datum Image Section -->
+                <div class="metode-section" id="datum-image-section" style="margin-top: 4rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                        <h3 class="spec-title" style="margin: 0;">image</h3>
+                        <button class="download-btn" onclick="downloadDatumZip('image')">
+                            <i data-feather="download"></i>
+                            <span>Download ZIP</span>
+                        </button>
+                    </div>
+                    
+                    <div class="masonry-grid" id="image-grid">
+                        <!-- Images will be added here dynamically or statically -->
+                        <div class="masonry-item" style="height: 280px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 350px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 220px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 300px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 260px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 320px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 240px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 290px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 270px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 310px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 285px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 330px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 250px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 295px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                        <div class="masonry-item" style="height: 340px;">
+                            <div class="image-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datum Audio Section -->
+                <div class="metode-section" id="datum-audio-section" style="margin-top: 4rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                        <h3 class="spec-title" style="margin: 0;">audio</h3>
+                        <button class="download-btn" onclick="downloadDatumZip('audio')">
+                            <i data-feather="download"></i>
+                            <span>Download ZIP</span>
+                        </button>
+                    </div>
+                    
+                    <div class="audio-grid">
+                        <div class="audio-card">
+                            <div class="audio-icon">
+                                <i data-feather="music"></i>
+                            </div>
+                            <div class="audio-info">
+                                <div class="audio-title">Audio File 1.mp3</div>
+                                <div class="audio-duration">3:45</div>
+                            </div>
+                            <button class="play-btn">
+                                <i data-feather="play"></i>
+                            </button>
+                        </div>
+                        <div class="audio-card">
+                            <div class="audio-icon">
+                                <i data-feather="music"></i>
+                            </div>
+                            <div class="audio-info">
+                                <div class="audio-title">Audio File 2.mp3</div>
+                                <div class="audio-duration">4:12</div>
+                            </div>
+                            <button class="play-btn">
+                                <i data-feather="play"></i>
+                            </button>
+                        </div>
+                        <div class="audio-card">
+                            <div class="audio-icon">
+                                <i data-feather="music"></i>
+                            </div>
+                            <div class="audio-info">
+                                <div class="audio-title">Audio File 3.mp3</div>
+                                <div class="audio-duration">2:58</div>
+                            </div>
+                            <button class="play-btn">
+                                <i data-feather="play"></i>
+                            </button>
+                        </div>
+                        <div class="audio-card">
+                            <div class="audio-icon">
+                                <i data-feather="music"></i>
+                            </div>
+                            <div class="audio-info">
+                                <div class="audio-title">Audio File 4.mp3</div>
+                                <div class="audio-duration">5:23</div>
+                            </div>
+                            <button class="play-btn">
+                                <i data-feather="play"></i>
+                            </button>
+                        </div>
+                        <div class="audio-card">
+                            <div class="audio-icon">
+                                <i data-feather="music"></i>
+                            </div>
+                            <div class="audio-info">
+                                <div class="audio-title">Audio File 5.mp3</div>
+                                <div class="audio-duration">3:18</div>
+                            </div>
+                            <button class="play-btn">
+                                <i data-feather="play"></i>
+                            </button>
+                        </div>
+                        <div class="audio-card">
+                            <div class="audio-icon">
+                                <i data-feather="music"></i>
+                            </div>
+                            <div class="audio-info">
+                                <div class="audio-title">Audio File 6.mp3</div>
+                                <div class="audio-duration">4:05</div>
+                            </div>
+                            <button class="play-btn">
+                                <i data-feather="play"></i>
+                            </button>
+                        </div>
+                        <div class="audio-card">
+                            <div class="audio-icon">
+                                <i data-feather="music"></i>
+                            </div>
+                            <div class="audio-info">
+                                <div class="audio-title">Audio File 7.mp3</div>
+                                <div class="audio-duration">3:41</div>
+                            </div>
+                            <button class="play-btn">
+                                <i data-feather="play"></i>
+                            </button>
+                        </div>
+                        <div class="audio-card">
+                            <div class="audio-icon">
+                                <i data-feather="music"></i>
+                            </div>
+                            <div class="audio-info">
+                                <div class="audio-title">Audio File 8.mp3</div>
+                                <div class="audio-duration">2:47</div>
+                            </div>
+                            <button class="play-btn">
+                                <i data-feather="play"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datum Video Section -->
+                <div class="metode-section" id="datum-video-section" style="margin-top: 4rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+                        <h3 class="spec-title" style="margin: 0;">video</h3>
+                        <button class="download-btn" onclick="downloadDatumZip('video')">
+                            <i data-feather="download"></i>
+                            <span>Download ZIP</span>
+                        </button>
+                    </div>
+                    
+                    <!-- YouTube-style layout: 1 big video + 3 smaller videos -->
+                    <div class="video-youtube-layout">
+                        <!-- Main big video -->
+                        <div class="video-card video-card-main">
+                            <div class="video-thumbnail">
+                                <div class="video-overlay">
+                                    <i data-feather="play-circle"></i>
+                                </div>
+                            </div>
+                            <div class="video-info">
+                                <div class="video-title">Main Video - Featured Content.mp4</div>
+                                <div class="video-duration">15:30</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Smaller videos grid -->
+                        <div class="video-sidebar-grid">
+                            <div class="video-card video-card-small">
+                                <div class="video-thumbnail-small">
+                                    <div class="video-overlay">
+                                        <i data-feather="play-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-title">Video 2.mp4</div>
+                                    <div class="video-duration">8:45</div>
+                                </div>
+                            </div>
+                            <div class="video-card video-card-small">
+                                <div class="video-thumbnail-small">
+                                    <div class="video-overlay">
+                                        <i data-feather="play-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-title">Video 3.mp4</div>
+                                    <div class="video-duration">12:20</div>
+                                </div>
+                            </div>
+                            <div class="video-card video-card-small">
+                                <div class="video-thumbnail-small">
+                                    <div class="video-overlay">
+                                        <i data-feather="play-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="video-info">
+                                    <div class="video-title">Video 4.mp4</div>
+                                    <div class="video-duration">6:12</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="datum.js"></script>
+</body>
+</html>
